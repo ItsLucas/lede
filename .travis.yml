@@ -1,0 +1,41 @@
+language: c
+addons:
+  apt:
+    packages:
+    - build-essential
+    - asciidoc
+    - binutils
+    - bzip2
+    - gawk
+    - gettext
+    - git
+    - libncurses5-dev
+    - libz-dev
+    - patch
+    - unzip
+    - zlib1g-dev
+    - lib32gcc1
+    - libc6-dev-i386
+    - subversion
+    - flex
+    - uglifyjs
+    - git-core
+    - gcc-multilib
+    - p7zip
+    - p7zip-full
+    - msmtp
+    - libssl-dev
+    - texinfo
+    - libglib2.0-dev
+install:
+- "./scripts/feeds update -a"
+- "./scripts/feeds install -a"
+script:
+- make -j4 V=s
+deploy:
+  provider: releases
+  api_key:
+    secure: ImN8cKAhf107KGMZZnuUaCyF0UKabUDRZgwGQlQbq7/uvGHDmvAaek7LfJ8vb2HqJNglRV2DsNT+6u+rbLHVJbcCljJqVo/HAYXRcYhYGXRzDJ6u8uQi015i93hpnd+mxVWRy6AjYB4NAe8mfJqcp4+IxRFtYLMbODANhBgoG4nHPZtYtBigKP9MVG4oZmyIrToQWdPvtgPMEHXHEN1u+A96dwVuGdcTt97r/UbQeAg5Ykaxrva0dqfih7fA6AsdCP/4yp2J8S2k8C132WDr5iQDTP5cH4yio40FadvxnaJHnDEPaGqpxu/WF7DNC6JhHXmZaLp9kYlMLHOh7uS4puqsW5ZhAW2vm8o4AFa0/3eX+muVoPt/OeluBLLAW1o3UusJZDk1tjITVhlayj+csC5Qv/et2PWv8w0C/dSXRBwmSMOL3+njDSGemKJBVq/pukc4sAAXrpH5O6E7kDRV3bup1NpFEDnp96oqHXRziFQZUPJJT0kMGnoN4cTlU+wYajzqWESZfnPArWAlYVfMP8sMGooxe0+2Xrax4uxLbhCBZhYfBrMxiPvX9YM3r/lHP89NZjf+q3dt1LNc+WwqVGfep1Z3N8RGs4yZNYdFed/tVJT7DoNP/oIdKZJgKdHJg8f2y9Xp9IEagxeTrBZpRkeJpZerWvQLSd3rywtiiB4=
+  file: "/home/travis/build/ItsLucas/lede/bin/targets/ipq806x/generic/lede-ipq806x-R7500v2-squashfs-sysupgrade.tar"
+  on:
+    repo: ItsLucas/lede
