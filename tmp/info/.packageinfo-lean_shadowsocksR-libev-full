@@ -1,0 +1,135 @@
+Source-Makefile: package/lean/shadowsocksR-libev-full/Makefile
+Package: shadowsocksr-libev
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-mini
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl +libpthread +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-alt
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-polarssl
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl +libpthread +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-gfwlist
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +dnsmasq-full +ipset +iptables +wget +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-gfwlist-polarssl
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl +libpthread +dnsmasq-full +ipset +iptables +wget-nossl +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+Package: shadowsocksr-libev-gfwlist-4M
+Version: 2.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl +libpthread +dnsmasq-full +ipset +iptables +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: breakwa11
+Source: shadowsocksR-libev-2.5.1-1.tar.gz
+Type: ipkg
+Description: ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+https://github.com/breakwa11/shadowsocks-libev
+breakwa11
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: package/network/services/upnpbridge/Makefile
+Package: upnpbridge
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: OpenWrt UPNP Multicast Bridge
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: OpenWrt UPNP Multicast Bridge
+
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/lean/n2n_v2/Makefile
+Package: n2n_v2
+Submenu: VPN
+Version: 9349-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +kmod-tun +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: N2N VPN tunneling daemon(V2)
+Maintainer: 
+Source: n2n_v2-9349.tar.gz
+Type: ipkg
+Description: N2N VPN tunneling daemon(V2)
+http://www.ntop.org/n2n/
+
+@@
+
+

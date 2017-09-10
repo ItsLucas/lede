@@ -1,0 +1,22 @@
+Source-Makefile: package/libs/ustream-ssl/Makefile
+Package: libustream-mbedtls
+Version: 2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Default-Variant: mbedtls
+Section: libs
+Category: Libraries
+Repository: base
+Title: ustream SSL Library (mbedtls)
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: ustream-ssl-2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6.tar.xz
+License: ISC
+Type: ipkg
+Description: ustream SSL Library (mbedtls)
+Felix Fietkau <nbd@nbd.name>
+@@
+
+

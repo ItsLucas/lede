@@ -1,0 +1,23 @@
+Source-Makefile: package/boot/uboot-layerscape-32b/Makefile
+Package: uboot-layerscape-32b
+Default: y
+Version: v1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: 32-bit U-Boot for Layerscape boards
+Maintainer: Jiang Yutang <jiangyutang1978@gmail.com>
+Source: uboot-layerscape-32bit-v1.0.tar.xz
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: ipkg
+Hidden: 1
+Description: 32-bit U-Boot for Layerscape boards
+Jiang Yutang <jiangyutang1978@gmail.com>
+@@
+
+

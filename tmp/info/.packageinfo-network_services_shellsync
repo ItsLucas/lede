@@ -1,0 +1,19 @@
+Source-Makefile: package/network/services/shellsync/Makefile
+Package: shellsync
+Version: 0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Utilities
+Repository: base
+Title: shellsync
+Maintainer: 
+Source: 
+Type: ipkg
+Description: A tool to sync different shell scripts.Based on syncppp patch by morfast.
+
+@@
+
+

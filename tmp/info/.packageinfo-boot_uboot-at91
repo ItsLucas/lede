@@ -1,0 +1,42 @@
+Source-Makefile: package/boot/uboot-at91/Makefile
+Package: u-boot-at91sam9m10g45ek_nandflash
+Version: 2016.05-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_legacy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: at91sam9m10g45ek_nandflash
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for AT91SAM9M10G45-EK board (NandFlash)
+Maintainer: 
+Source: u-boot-2016.05.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for AT91SAM9M10G45-EK board (NandFlash)
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: u-boot-at91sam9x5ek_nandflash
+Version: 2016.05-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_at91_legacy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: at91sam9x5ek_nandflash
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for AT91SAM9X5-EK board (NandFlash)
+Maintainer: 
+Source: u-boot-2016.05.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for AT91SAM9X5-EK board (NandFlash)
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+

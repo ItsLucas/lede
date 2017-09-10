@@ -1,0 +1,19 @@
+Source-Makefile: package/lean/automount/Makefile
+Package: automount
+Version: 1-13
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread block-mount +kmod-usb-storage +kmod-usb-storage-extras +kmod-fs-ext4 +kmod-fs-vfat +kmod-fs-exfat +ntfs-3g
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Mount autoconfig hotplug script.
+Maintainer: Lean
+Source: 
+Type: ipkg
+Description: A usb autoconfig hotplug script.
+Lean
+@@
+
+

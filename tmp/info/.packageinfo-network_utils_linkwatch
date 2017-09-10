@@ -1,0 +1,19 @@
+Source-Makefile: package/network/utils/linkwatch/Makefile
+Package: linkwatch
+Version: 2016-02-17-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Manual link dhcp link updater for bridged wan
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Manual link dhcp link updater for bridged wan
+
+@@
+
+
