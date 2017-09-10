@@ -31,7 +31,7 @@ install:
 - "./scripts/feeds update -a"
 - "./scripts/feeds install -a"
 script:
-- make -j4
+- make -j2 V=s
 deploy:
   provider: releases
   api_key:
