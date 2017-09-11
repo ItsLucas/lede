@@ -13,6 +13,7 @@ addons:
     - libz-dev
     - patch
     - unzip
+    - xmlto
     - zlib1g-dev
     - lib32gcc1
     - libc6-dev-i386
@@ -31,7 +32,7 @@ install:
 - "./scripts/feeds update -a"
 - "./scripts/feeds install -a"
 script:
-- make -j2 V=50
+- make -j2
 deploy:
   provider: releases
   api_key:
